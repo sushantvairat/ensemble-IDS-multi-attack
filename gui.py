@@ -132,7 +132,7 @@ def worker2(m,k):
 
 	#preparing dataset
 	from sklearn.preprocessing import LabelEncoder
-	dataset1=pd.read_csv("/home/aniket/intermediate_log.csv")
+	dataset1=pd.read_csv("intermediate_log.csv")
 	dataset1.dropna(how='any',axis=0,inplace = True)
 	X1= pd.DataFrame(data = dataset1.iloc[m:k], columns = KDD_Extractor_features_26)
 	a=[]
@@ -162,8 +162,8 @@ def worker2(m,k):
 			if d[i][-1]!='normal':
 				count=count+1
 
-		datasetlog=pd.read_csv("/home/aniket/final_log.csv")
-		dataset1=pd.read_csv("/home/aniket/intermediate_log.csv").iloc[m:k]
+		datasetlog=pd.read_csv("final_log.csv")
+		dataset1=pd.read_csv("intermediate_log.csv").iloc[m:k]
 		
 		dataset1.insert(33,'label',a)
 		#section for filling label column		
