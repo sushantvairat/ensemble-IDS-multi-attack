@@ -7,7 +7,7 @@ NSL-KDD dataset has been used for both training and testing the model. KDDExtrac
 
 
 
-# Installation required:
+Installation required:
 a) Python3 libraries:
 1. Scapy 
 2. Tkinter
@@ -48,3 +48,15 @@ sudo make
 sudo ./kdd99extractor 
 press ctrl c to stop.
 cd ../..
+
+# Steps for creating pickle file:
+Run the pickle_generator.py. also keep the KDDTrain+.csv in the home directory or ajust the path accoringly. 
+or
+You can use online tools like kaggle and colab and dwld github from there
+Note: Change the name of pickle file accordingly in gui.py depending on classifier used.
+
+ 
+# Steps for running the code:
+1. Copy the kdd99extractor file got after building the kdd99_feature_extractor, pcap_to_csv.py, packetlog.py, gui.py file in home only or make proper path changes as required.
+2. Run pcap_to_csv using sudo python3 pcap_to_csv.py
+Note: Code might run slow, show no output or look like hanging the system depending on classifier used for pickle file generation so wait for atleast 2 minutes.
