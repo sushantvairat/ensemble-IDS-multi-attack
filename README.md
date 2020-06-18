@@ -32,22 +32,22 @@ You can use pip3 command or use online compilers like colab but prefer installin
 
 
 Steps for Installation of KDD-extractor:
-Download KDDExtractor from (https://github.com/AI-IDS/kdd99_feature_extractor).
+First download KDDExtractor from (https://github.com/AI-IDS/kdd99_feature_extractor).
 
 #To install cmake
 sudo apt-get install cmake
 
 #To build kdd99_feature_extractor
 sudo apt-get install libpcap0.8-dev
-cd kdd99_feature_extractor-master
-cmake CMakeLists.txt 
-make
-sudo make
-cd src
-sudo make
-sudo ./kdd99extractor 
-press ctrl c to stop.
-cd ../..
+1. cd kdd99_feature_extractor-master
+2. cmake CMakeLists.txt 
+3. make
+4. sudo make
+5. cd src
+6.sudo make
+7. sudo ./kdd99extractor 
+8. press ctrl c to stop.
+9.cd ../..
 
 # Steps for creating pickle file:
 Run the pickle_generator.py. also keep the KDDTrain+.csv in the home directory or ajust the path accoringly. 
