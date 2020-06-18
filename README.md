@@ -50,7 +50,7 @@ sudo apt-get install libpcap0.8-dev
 9.cd ../..
 
 # Steps for creating pickle file:
-Run the pickle_generator.py. also keep the KDDTrain+.csv in the home directory or ajust the path accoringly. 
+Run the pickle_generation.py also keep the KDDTrain+.csv in the home directory or ajust the path accoringly. 
 or
 You can use online tools like kaggle and colab and dwld github from there
 Note: Change the name of pickle file accordingly in gui.py depending on classifier used.
