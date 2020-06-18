@@ -44,7 +44,7 @@ sudo apt-get install libpcap0.8-dev
 3. make
 4. sudo make
 5. cd src
-6.sudo make
+6. sudo make
 7. sudo ./kdd99extractor 
 8. press ctrl c to stop.
 9.cd ../..
