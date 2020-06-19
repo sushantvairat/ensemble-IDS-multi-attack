@@ -6,9 +6,9 @@ In multi attack environment, there would be more than one attack occurring simul
 NSL-KDD dataset has been used for both training and testing the model. KDDExtractor from [GitHub KDDExtractor](https://github.com/AI-IDS/kdd99_feature_extractor).
 
 
-#### Installation ####
+### Installations ###
 
-Installation required:
+#### Installation required: ####
 
 * Python3 libraries:
 	- Scapy 
@@ -44,7 +44,7 @@ First download KDDExtractor from [GitHub KDDExtractor](https://github.com/AI-IDS
 	sudo apt-get install cmake
 
 
-###	To build kdd99_feature_extractor ###
+#### To build kdd99_feature_extractor ####
 	sudo apt-get install libpcap0.8-dev
 Then,
 1. cd kdd99_feature_extractor-master
@@ -65,7 +65,7 @@ or
 
 You can use online tools like kaggle and colab and dwld github from there.
 
-Note: Change the name of pickle file accordingly in gui.py depending on classifier used.
+> Note: Change the name of pickle file accordingly in gui.py depending on classifier used.
 
  
 #### Steps for running the code: ####
@@ -74,4 +74,4 @@ Note: Change the name of pickle file accordingly in gui.py depending on classifi
 2. Run pcap_to_csv file using 
 	- sudo python3 pcap_to_csv.py
 
-Note: Code might run slow, show no output or look like hanging the system depending on classifier used for pickle file generation so wait for atleast 2 minutes.
+> Note: Code might run slow, show no output or look like hanging the system depending on classifier used for pickle file generation so wait for atleast 2 minutes.
