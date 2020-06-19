@@ -1,9 +1,9 @@
 # Ensemble-IDS-multi-attack
-This is our final year engineering project titled "Ensemble Based Intrusion Detection System". In this project we have tried to detect multi attacks using ensemble approaches of Machine Learning.
+This is our final year engineering project titled **Ensemble Based Intrusion Detection System for Multi attack Environment**. In this project we have tried to detect multi attacks using ensemble approaches of Machine Learning.
 
 In multi attack environment, there would be more than one attack occurring simultaneously or within a short span of time. In our project, we have considered all those attacks as multi attacks which occur within one second of time span. We have proposed a system that captures live packets from the network and classifies whether the packet is normal or belongs to one of the subclasses of attack using various ensemble approaches such as Bagging, Boosting and Stacking. The highest accuracy we got is using XGBoost of 72.27%.
 
-NSL-KDD dataset has been used for both training and testing the model. KDDExtractor from (https://github.com/AI-IDS/kdd99_feature_extractor).
+NSL-KDD dataset has been used for both training and testing the model. KDDExtractor from [GitHub KDDExtractor](https://github.com/AI-IDS/kdd99_feature_extractor).
 
 
 #### Installation ####
@@ -37,7 +37,7 @@ You can use pip3 command or use online compilers like colab but prefer installin
 
 
 #### Steps for Installation of KDD-extractor: ####
-First download KDDExtractor from (https://github.com/AI-IDS/kdd99_feature_extractor).
+First download KDDExtractor from [GitHub KDDExtractor](https://github.com/AI-IDS/kdd99_feature_extractor).
 
 
 #### To install cmake ####
@@ -46,6 +46,7 @@ First download KDDExtractor from (https://github.com/AI-IDS/kdd99_feature_extrac
 
 ###	To build kdd99_feature_extractor ###
 	sudo apt-get install libpcap0.8-dev
+Then,
 1. cd kdd99_feature_extractor-master
 2. cmake CMakeLists.txt 
 3. make
@@ -54,7 +55,7 @@ First download KDDExtractor from (https://github.com/AI-IDS/kdd99_feature_extrac
 6. sudo make
 7. sudo ./kdd99extractor 
 8. press Ctrl + C to stop
-9.cd ../..
+9. cd ../..
 
 
 #### Steps for creating pickle file: ####
@@ -68,8 +69,9 @@ Note: Change the name of pickle file accordingly in gui.py depending on classifi
 
  
 #### Steps for running the code: ####
-1. Copy the kdd99extractor file got after building the kdd99_feature_extractor, pcap_to_csv.py, packetlog.py, gui.py file in home only or make proper path changes as required.
+1. Copy the kdd99extractor file created after building the kdd99_feature_extractor, pcap_to_csv.py, packetlog.py, gui.py file in home folder only or make proper path changes as required.
 
-2. Run pcap_to_csv using *sudo python3 pcap_to_csv.py*.
+2. Run pcap_to_csv file using 
+	- sudo python3 pcap_to_csv.py
 
 Note: Code might run slow, show no output or look like hanging the system depending on classifier used for pickle file generation so wait for atleast 2 minutes.
