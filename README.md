@@ -61,10 +61,6 @@ Then,
 #### Steps for creating pickle file: ####
 Run the pickle_generation.py also keep the KDDTrain+.csv in the home directory or adjust the path accordingly.
 
-or
-
-You can use online tools like kaggle and colab and dwld github from there.
-
 > Note: Change the name of pickle file accordingly in gui.py depending on classifier used.
 
  
